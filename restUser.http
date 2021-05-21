@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/v1/users HTTP/1.1
+content-type:application/json
+
+{
+    "username":"pepsi",
+    "email":"pepsi@gmail.com",
+    "password":"1234"
+}
+
+###
+
+GET http://localhost:5001/api/v1/users HTTP/1.1
+content-type:application/json
+
+###
+
+PUT http://localhost:3000/api/v1/users/604109cbd853ec44e0e7e804 HTTP/1.1
+content-type:application/json
+
+{
+    "username":"peppp",
+}
+
+###
+
+DELETE http://localhost:3000/api/v1/users/6040fa91ac8db649c4528d08 HTTP/1.1
+content-type:application/json
+

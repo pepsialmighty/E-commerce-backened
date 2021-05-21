@@ -1,0 +1,40 @@
+POST http://localhost:5001/api/v1/products HTTP/1.1
+content-type:application/json
+
+{
+    "name":"Nikon D750",
+    "imageUrl":"https://images.unsplash.com/photo-1564466809058-bf4114d55352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit",
+    "description":"The D750 is Nikon's third full-frame DSLR this year, and for a lot of our readers, it might be the most significant. Sitting between the more affordable D610 and the pro-grade, high-resolution D810, the D750 borrows elements from both cameras. Impressively though - with the exception of its 24 megapixel sensor - the D750's build quality, ergonomics and feature set have much more in common with the more expensive of the two.",
+    "price":1500,
+    "countInStock":5
+}
+
+###
+
+GET http://localhost:5001/api/v1/products HTTP/1.1
+content-type:application/json
+
+###
+
+GET http://localhost:5001/api/v1/products/604e206e2c3e68eb031a21eb HTTP/1.1
+content-type:application/json
+
+###
+
+GET http://localhost:5001/api/v1/products/category/furniture HTTP/1.1
+content-type:application/json
+
+
+
+
+###
+DELETE http://localhost:5001/api/v1/products/6050df546683da563c989e05 HTTP/1.1
+content-type:application/json
+
+###
+PUT http://localhost:5001/api/v1/products/60575155cb9718867c15fa5f HTTP/1.1
+content-type:application/json
+
+{
+    "countInStock":10
+}

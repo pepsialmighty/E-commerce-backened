@@ -1,0 +1,32 @@
+POST http://localhost:3000/api/v1/movies HTTP/1.1
+content-type:application/json
+
+{
+    "name":"Lord of the ring 1",
+    "publishedYear":2013,
+    "duration":11
+}
+
+###
+
+GET http://localhost:3000/api/v1/movies HTTP/1.1
+content-type:application/json
+
+###¨
+
+DELETE http://localhost:3000/api/v1/movies/ID HTTP/1.1
+content-type:application/json
+
+###
+GET http://localhost:3000/api/v1/movies/603ea6ee4efca5399c177789 HTTP/1.1
+content-type:application/json
+
+
+###
+PUT http://localhost:3000/api/v1/movies/603ea2790b63273f4879e74e HTTP/1.1
+content-type:application/json
+
+{
+    "name":"Starwars",
+    "duration":15
+}
